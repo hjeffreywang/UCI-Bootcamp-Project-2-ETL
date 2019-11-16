@@ -22,15 +22,15 @@ Data sources:
 
  - SQLalchemy
 
-		After importing the necessary packages and loading the SQL database, we must probe the 1.3 gb data for desired indicators.
+	After importing the necessary packages and loading the SQL database, we must probe the 1.3 gb data for desired indicators.
 
  - Inspector
 
-		After inspection, we find indicators is the table which contains our desired values. Using sqlite viewer, we find that GDP, urbanization, and internet availability.
+	After inspection, we find indicators is the table which contains our desired values. Using sqlite viewer, we find that GDP, urbanization, and internet availability are indicators which could most likely affect suicide rate.
 
 - Query
 
-		Because there is no primary key, conventional automapping classes by SQLalchemy does not work. Instead we will use native SQL query to extract the database columns.
+	Because there is no primary key, conventional automapping classes by SQLalchemy does not work. Instead we will use native SQL query to extract the database columns.
 
   
 
@@ -46,11 +46,11 @@ Data sources:
 
  - Pandas Dataframe
 
-		Using the query, we transform the SQL data to dataframe form and then rename the columns and set index to countries for ease of merging.
+	Using the query, we transform the SQL data to dataframe form and then rename the columns and set index to countries for ease of merging.
 
  - Pandas Merging
 
-		Using pandas merge, we merge the tables of each query and export to csv to put into SQL database.
+	Using pandas merge, we merge the tables of each query and export to csv to put into SQL database.
 
   
 
