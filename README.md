@@ -22,15 +22,15 @@ Data sources:
 
  - SQLalchemy
 
-	After importing the necessary packages and loading the SQL database, we must probe the 1.3 gb data for desired indicators.
+	The first steps are importing the necessary packages, loading the SQL database, and probing the 1.3 gb data for desired indicators.
 
  - Inspector
 
-	After inspection, we find indicators is the table which contains our desired values. Using sqlite viewer, we find that GDP, urbanization, and internet availability are indicators which could most likely affect suicide rate.
+	Indicators is the table which contains our desired values. Using sqlite viewer, we find that GDP, urbanization, and internet availability are indicators which could most likely affect suicide rate.
 
 - Query
 
-	Because there is no primary key, conventional automapping classes by SQLalchemy does not work. Instead we will use native SQL query to extract the database columns.
+	Because there is no primary key, conventional automapping classes by SQLalchemy does not work. Instead we use native SQL query to extract the database columns.
 
   
 
