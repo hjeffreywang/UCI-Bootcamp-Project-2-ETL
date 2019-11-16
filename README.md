@@ -61,15 +61,11 @@ Data sources:
 
 **Master.csv**
 
-#### Suicide Rates by Country Dataframe
-
-* Pandas Dataframe
+* Pandas Dataframe - Suicide Rates by Country Dataframe
 
 	Using Pandas, group the data by `year` and `country` with sum of `suicide rates per 100k pop` as values, then unstack to view the `year` as the index and `country` as column titles. To grab the last reported suicide rate for each country, we iterate through the rows using a for loop. Create a dictionary to store the country as a key, and corresponding suicide rate as value; then convert the dictionary to a Pandas dataframe with country as index, and export as a .csv file.
 
-#### GDP by Country Dataframe
-
-* Pandas Dataframe
+* Pandas Dataframe - GDP by Country Dataframe
 
 	Create a new Pandas dataframe with only the necessary columns from original the orignal data (`country`, `year`, `GDP per capita`). Drop duplicate rows, then group by `country` and `year`, with `GDP per capita` as the values displayed, then unstack to view the `year` as the index and `country` as column titles. To grab the last reported GDP per capita for each country, we iterate through the rows using a for loop. Create a dictionary to store country as key, and corresponding GDP per capita as value; then convert the dictionary to a dataframe with country as index, and export as .csv file.
 
