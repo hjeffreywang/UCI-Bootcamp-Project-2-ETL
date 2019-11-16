@@ -12,9 +12,9 @@ Potential usage for this database would be to explore the relationship between s
 
 Data sources:
 
-[https://www.kaggle.com/worldbank/world-development-indicators/data#](https://www.kaggle.com/worldbank/world-development-indicators/data#) (Database.sqlite)
+[https://www.kaggle.com/worldbank/world-development-indicators/data#](https://www.kaggle.com/worldbank/world-development-indicators/data#) `Database.sqlite`
 
-[https://www.kaggle.com/russellyates88/suicide-rates-overview-1985-to-2016](https://www.kaggle.com/russellyates88/suicide-rates-overview-1985-to-2016) (master.csv)
+[https://www.kaggle.com/russellyates88/suicide-rates-overview-1985-to-2016](https://www.kaggle.com/russellyates88/suicide-rates-overview-1985-to-2016) `master.csv`
 
 ## Extraction
 
@@ -41,9 +41,7 @@ Data sources:
 
 **Master.csv extraction**
 
- - Import pandas as pd
-   
-  - pd.read_csv
+I import the Pandas library into Python to read the `master.csv` file and start wrangling the data. Using the `pd.read_csv` function, I was able to extract the data into Python.
 
 ## Transformation
 
