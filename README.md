@@ -27,6 +27,11 @@ Data sources:
  - Inspector
 
 	Indicators is the table which contains our desired values. Using sqlite viewer, we find that GDP, urbanization, and internet availability are indicators which could most likely affect suicide rate.
+	
+
+- Deciding indicators 
+
+	Due to the overwhelming evidence that the introduction of the internet has created an increasingly socially isolated society, percentge of internet availability is measured. Since GDP is most accepted measure of wealth, that is another indicator we will query. Finally, increased urbanization and increased population density may be a factor that affects suicidal rates, and thus we also queried this.
 
 - Query
 
