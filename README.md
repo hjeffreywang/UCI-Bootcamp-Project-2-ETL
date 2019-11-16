@@ -41,7 +41,7 @@ Data sources:
 
 **Master.csv extraction**
 
-I import the Pandas library into Python to read the `master.csv` file and start wrangling the data. Using the `pd.read_csv` function, I was able to extract the data into Python.
+* I import the Pandas library into Python to read the `master.csv` file and start wrangling the data. Using the `pd.read_csv` function, I was able to extract the data into Python.
 
 ## Transformation
 
@@ -61,12 +61,12 @@ I import the Pandas library into Python to read the `master.csv` file and start 
 
 #### Suicide Rates by Country Dataframe
 
-Using Pandas, group the data by `year` and `country` with sum of `suicide rates per 100k pop` as values, then unstack to view the `year` as the index and `country` as column titles. To grab the last reported suicide rate for each country, we iterate through the rows using a for loop. Create a dictionary to store the country as a key, and corresponding suicide rate as value; then convert the dictionary to a Pandas dataframe with country as index, and export as a .csv file.
+* Using Pandas, group the data by `year` and `country` with sum of `suicide rates per 100k pop` as values, then unstack to view the `year` as the index and `country` as column titles. To grab the last reported suicide rate for each country, we iterate through the rows using a for loop. Create a dictionary to store the country as a key, and corresponding suicide rate as value; then convert the dictionary to a Pandas dataframe with country as index, and export as a .csv file.
 
 #### GDP by Country Dataframe
 
-Create a new Pandas dataframe with only the necessary columns from original the orignal data (`country`, `year`, `GDP per capita`). Drop duplicate rows, then group by `country` and `year`, with `GDP per capita` as the values displayed, then unstack to view the `year` as the index and `country` as column titles. To grab the last reported GDP per capita for each country, we iterate through the rows using a for loop. Create a dictionary to store country as key, and corresponding GDP per capita as value; then convert the dictionary to a dataframe with country as index, and export as .csv file.
+* Create a new Pandas dataframe with only the necessary columns from original the orignal data (`country`, `year`, `GDP per capita`). Drop duplicate rows, then group by `country` and `year`, with `GDP per capita` as the values displayed, then unstack to view the `year` as the index and `country` as column titles. To grab the last reported GDP per capita for each country, we iterate through the rows using a for loop. Create a dictionary to store country as key, and corresponding GDP per capita as value; then convert the dictionary to a dataframe with country as index, and export as .csv file.
 
 ## Loading
 
-PGAdmin (PostgreSQL) is chosen for ease of query and initialization. Table for each .csv file were created, then .csv files were imported into the table. Then, we query each table to ensure the dat was properly imported. To create the final database, we inner join tables on `country`.
+* PGAdmin (PostgreSQL) is chosen for ease of query and initialization. Table for each .csv file were created, then .csv files were imported into the table. Then, we query each table to ensure the dat was properly imported. To create the final database, we inner join tables on `country`.
