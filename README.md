@@ -89,7 +89,7 @@ Data sources:
 
 ## Loading
 
- - PGAdmin (PostgreSQL)
+ - PGAdmin (PostgreSQL) is chosen for ease of query and initialization
    
  - Create table for each csv created
    
