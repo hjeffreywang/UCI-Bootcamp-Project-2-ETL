@@ -61,40 +61,14 @@ Data sources:
 
 **Master.csv**
 
-- Pandas Dataframe
+#### Suicide Rates by Country Dataframe
 
-- Suicide Rates by Country Dataframe
+Using Pandas, group the data by `year` and `country` with sum of `suicide rates per 100k pop` as values, then unstack to view the `year` as the index and `country` as column titles. To grab the last reported suicide rate for each country, we iterate through the rows using a for loop. Create a dictionary to store the country as a key, and corresponding suicide rate as value; then convert the dictionary to a Pandas dataframe with country as index, and export as a .csv file.
 
-- Group by year and country with sum of suicide rates as values, then unstack
+#### GDP by Country Dataframe
 
-- For loop to grab last reported suicide rate for each country
-
-- Create a dictionary to store country as key, and corresponding suicide rate as value
-
-- Convert to dataframe with country as index, and export as csv
-
-- GDP by Country Dataframe
-
-- Pull necessary columns from original database (country, year, GDP per capita)
-
-- Drop duplicate rows
-
-- Group by country and year, with GDP per capita as values displayed, then unstack
-
-- For loop to grab last reported GDP per capita for each country
-
--  Create a dictionary to store country as key, and corresponding GDP per capita as value
-
-- Convert to dataframe with country as index, and export as csv
+Create a new Pandas dataframe with only the necessary columns from original the orignal data (`country`, `year`, `GDP per capita`). Drop duplicate rows, then group by `country` and `year`, with `GDP per capita` as the values displayed, then unstack to view the `year` as the index and `country` as column titles. To grab the last reported GDP per capita for each country, we iterate through the rows using a for loop. Create a dictionary to store country as key, and corresponding GDP per capita as value; then convert the dictionary to a dataframe with country as index, and export as .csv file.
 
 ## Loading
 
- - PGAdmin (PostgreSQL) is chosen for ease of query and initialization
-   
- - Create table for each csv created
-   
-  - Import csvs into tables
-   
-   - Query each table to ensure properly imported
-   
-   - Inner join tables on “country”
+PGAdmin (PostgreSQL) is chosen for ease of query and initialization. Table for each .csv file were created, then .csv files were imported into the table. Then, we query each table to ensure the dat was properly imported. To create the final database, we inner join tables on `country`.
